@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "es2015"
+  ],
+  "ignore": "test/index.test.js",
+  "env": {
+    "test": {
+      "plugins": ["istanbul"],
+      "sourceMaps": "inline"
+    }
+  }
+}
