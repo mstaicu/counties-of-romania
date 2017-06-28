@@ -8,8 +8,9 @@ branches:
   only:
     - master
 notifications:
-  email: true
+  email: false
 script:
   - npm run validate
 after_success:
   - npm run report-coverage
+  - npm run semantic-release
