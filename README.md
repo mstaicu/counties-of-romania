@@ -8,6 +8,8 @@ This package is distributed via npm:
 
 ```npm install counties-of-romania```
 
+It is also available via UMD.
+
 ## Usage
 
 ```javascript
@@ -18,9 +20,9 @@ var randomCounty = counties.random();
 
 ## Installation
 
-1. Make sure you have node and npm installed as globals.
-2. 'npm install' will fetch the required dependencies.
-3. After the dependencies have been retrieved you should issue a 'node run validate' command to make sure everything is in order.
+1. Make sure you have node and npm installed as globals
+2. 'npm install' will fetch the required dependencies
+3. After the dependencies have been retrieved you should issue a 'node run validate' command to make sure everything is in order
 
 ## Contributing
 
