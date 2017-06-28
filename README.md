@@ -1,6 +1,7 @@
 # counties-of-romania
 
-[![Build Status](https://travis-ci.org/mstaicu/counties-of-romania.svg?branch=master)](https://travis-ci.org/mstaicu/counties-of-romania)
+[![Build Status](https://travis-ci.org/mstaicu/counties-of-romania.svg?branch=master&style=flat-square)](https://travis-ci.org/mstaicu/counties-of-romania)
+[![Codecov branch](https://img.shields.io/codecov/c/github/mstaicu/counties-of-romania/master.svg?style=flat-square)](https://codecov.io/gh/mstaicu/counties-of-romania/)
 
 Get random counties from the lovely Romania
 

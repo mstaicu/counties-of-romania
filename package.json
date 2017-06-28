@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Romanian counties",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "romanian",
     "romania",
@@ -44,9 +47,6 @@
     "type": "git",
     "url": "https://github.com/mstaicu/counties-of-romania.git"
   },
-  "files": [
-    "dist"
-  ],
   "author": "Mircea Staicu <mstaicu@yahoo.com>",
   "license": "MIT"
 }
