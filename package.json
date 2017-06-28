@@ -1,6 +1,6 @@
 {
   "name": "counties-of-romania",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Romanian counties",
   "main": "dist/index.js",
   "files": [
