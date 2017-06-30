@@ -1,4 +1,4 @@
-# counties-of-romania
+# Counties of Romania 🇷🇴
 
 [![Build Status](https://travis-ci.org/mstaicu/counties-of-romania.svg?branch=master&style=flat-square)](https://travis-ci.org/mstaicu/counties-of-romania)
 [![Codecov branch](https://img.shields.io/codecov/c/github/mstaicu/counties-of-romania/master.svg?style=flat-square)](https://codecov.io/gh/mstaicu/counties-of-romania/)
@@ -12,7 +12,7 @@ Get random counties from the lovely Romania
 
 ## Installation
 
-This package is distributed via npm:
+This package is distributed via npm. It is also available as a UMD build.
 
 ```npm install counties-of-romania```
 
@@ -31,6 +31,7 @@ var randomCounty = counties.random();
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
+6. Feel awesome 🙌🏻
 
 ## Credits
 
