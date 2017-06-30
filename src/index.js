@@ -1,9 +1,9 @@
 import randomUniqueArray from 'unique-random-array';
-import countiesOfRomania from './counties-of-romania.json';
+import _countiesOfRomania from './counties-of-romania.json';
 
 const publicApi = {
-  all: countiesOfRomania,
-  random: randomUniqueArray(countiesOfRomania),
+  all: _countiesOfRomania,
+  random: randomUniqueArray(_countiesOfRomania),
 };
 
 export default publicApi;
