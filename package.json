@@ -51,7 +51,7 @@
     "build:umd": "webpack --output-filename index.umd.js",
     "build:umd.min": "webpack --output-filename index.umd.min.js -p",
     "lint": "eslint src",
-    "report-coverage": "cat ./coverage/lcov.infp | codecov",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "cross-env BABEL_ENV=test nyc ava",
     "validate": "npm-run-all --parallel lint test build"
