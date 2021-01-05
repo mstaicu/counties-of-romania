@@ -4,6 +4,10 @@ node_js:
 branches:
   only:
     - master
+install:
+  - npm install
+script:
+  - npm run build
 deploy:
   provider: npm
   email: $EMAIL
