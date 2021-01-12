@@ -26,6 +26,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "start": "npm run build -- --watch --preserveWatchOutput",
     "lint": "eslint --ignore-path .gitignore .",
     "check:format": "prettier --ignore-path .gitignore --list-different \"src/**/*.+(ts|js|json)\"",
     "check:types": "tsc --project tsconfig.json --pretty --noEmit",

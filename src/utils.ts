@@ -1,8 +1,10 @@
+import counties from './counties';
+
 interface UniqueRandom {
   (minimum: number, maximum: number): () => number;
 }
 
-export const uniqueRandom: UniqueRandom = (minimum, maximum) => {
+const uniqueRandom: UniqueRandom = (minimum, maximum) => {
   let previousValue: number;
 
   return function random() {
@@ -16,3 +18,10 @@ export const uniqueRandom: UniqueRandom = (minimum, maximum) => {
     return previousValue;
   };
 };
+
+const randomCountyIndex = uniqueRandom(0, counties.length - 1);
+
+const random: () => typeof counties[number] = () =>
+  counties[randomCountyIndex()];
+
+export { random };

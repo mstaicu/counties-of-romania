@@ -1,9 +1,5 @@
-import { uniqueRandom } from './utils';
-
 import counties from './counties';
-
-const randomCountyIndex = uniqueRandom(0, counties.length - 1);
+import { random as randomCounties } from './utils';
 
 export const all = counties;
-export const random: () => typeof counties[number] = () =>
-  counties[randomCountyIndex()];
+export const random = randomCounties;
