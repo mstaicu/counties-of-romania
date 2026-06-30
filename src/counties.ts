@@ -1,4 +1,4 @@
-export default [
+const counties = [
   'Alba',
   'Arad',
   'Argeș',
@@ -42,3 +42,7 @@ export default [
   'Vâlcea',
   'Vrancea',
 ] as const;
+
+export type County = (typeof counties)[number];
+
+export default counties;

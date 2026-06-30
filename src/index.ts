@@ -1,5 +1,5 @@
 import counties from './counties';
-import { random as randomCounties } from './utils';
+import { random as randomCounty } from './random';
 
 export const all = counties;
-export const random = randomCounties;
+export const random = randomCounty;

@@ -1,43 +1,38 @@
 {
   "name": "counties-of-romania",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Romanian counties",
+  "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": "https://github.com/mstaicu/counties-of-romania",
   "author": "Mircea Staicu",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mstaicu/counties-of-romania.git"
-  },
   "keywords": [
     "romania",
     "counties"
   ],
-  "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.38.0",
-    "@typescript-eslint/eslint-plugin": "^8.46.2",
-    "@typescript-eslint/parser": "^8.46.2",
-    "eslint": "^9.38.0",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "globals": "^16.4.0",
-    "husky": "^9.1.7",
-    "prettier": "^3.6.2",
-    "typescript": "^5.9.3"
-  },
   "scripts": {
+    "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\"",
     "build": "tsc",
-    "start": "npm run build -- --watch --preserveWatchOutput",
-    "lint": "eslint src",
-    "check:format": "prettier --ignore-path .gitignore --list-different \"src/**/*.+(ts|js|json)\"",
-    "check:types": "tsc --project tsconfig.json --pretty --noEmit",
-    "validate": "npm run lint && npm run check:format && npm run check:types"
+    "lint": "eslint . --max-warnings=0",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test src/*.test.mjs",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm test",
+    "prepack": "npm run clean && npm run build"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run validate"
-    }
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.1"
   }
 }
